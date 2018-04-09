@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 # 全局配置文件，配置全局变量
 
 import os
@@ -43,5 +45,6 @@ config = {
     'development': DevelopmentConfig,
     'testing': TestingConfig,
     'production': ProductionConfig,
+
     'default': DevelopmentConfig
 }

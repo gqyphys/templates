@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
@@ -11,7 +13,7 @@ moment = Moment()
 db = SQLAlchemy()
 
 
-def app_create(config_name):
+def create_app(config_name):
     app = Flask(__name__)
     # 可以直接把对象里面的配置数据转换到app.config里面
     app.config.from_object(config[config_name])

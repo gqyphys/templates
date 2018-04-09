@@ -1,13 +1,13 @@
 #! /user/bin/env python
-#! -*- coding: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 
 import os
-from app import app_create, db
+from app import create_app, db
 from app.models import User, Role
 from flask.ext.script import Manager, Shell
 from flask.ext.migrate import Migrate, MigrateCommand
 
-app = app_create(os.getenv('FLASK_CONFIG') or 'default')
+app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)
 migrate = Migrate(app, db)
 
