@@ -1,0 +1,5 @@
+.idea/
+src/main/.DS_Store
+.DS_Store
+venv/
+*.xml
